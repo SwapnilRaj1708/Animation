@@ -2,12 +2,19 @@
     margin: 0px;
     padding: 0px;
 }
+#bg{
+    position: absolute;
+    width: 95vw;
+    height: 95vh;
+}
 body{
-    background-color: rgb(0, 162, 255);
+    background-color: rgb(52, 167, 46);
     margin: 0;
     overflow-x: hidden;
 }
 button{
+    z-index: 2;
+    position: absolute;
     width: 200px;
     height: 40px;
     font-size: 20px;
@@ -22,6 +29,7 @@ button{
     margin-left: 895px;
 }
 .road3{
+    visibility: hidden;
     position: absolute;
     margin-top: 700px;
     margin-left: 1790px;

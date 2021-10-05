@@ -48,6 +48,26 @@ function move_forward() {
                 document.getElementById("guards_speak").style.visibility="visible";
                 document.getElementById("yes_sir").style.visibility="visible";
             },8200);
+            setTimeout(function(){
+                document.getElementById("guards_speak").style.visibility="hidden";
+                document.getElementById("yes_sir").style.visibility="hidden";
+                document.getElementById("guard1").style.visibility="hidden";
+                document.getElementById("guard2").style.visibility="hidden";
+                document.getElementById("guard_flipped1").style.visibility="visible";
+                document.getElementById("guard_flipped2").style.visibility="visible";
+            },9000);
+            setTimeout(function(){
+                document.getElementById("gate_closed").style.visibility="hidden";
+                document.getElementById("gate_open1").style.visibility="visible";
+                document.getElementById("gate_open2").style.visibility="visible";
+            },9700);
+            setTimeout(function(){
+                document.getElementById("guard_flipped1").style.visibility="hidden";
+                document.getElementById("guard_flipped2").style.visibility="hidden";
+                document.getElementById("guard1").style.visibility="visible";
+                document.getElementById("guard2").style.visibility="visible";
+
+            },10000);
             
         }
         else {
