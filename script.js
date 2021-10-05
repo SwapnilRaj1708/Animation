@@ -23,6 +23,8 @@ function move_forward() {
                 document.getElementById("gates").style.visibility="visible";
             },5200);
             setTimeout(function(){
+                document.getElementById("sleepy1").style.visibility="hidden";
+                document.getElementById("sleepy2").style.visibility="hidden";
                 document.getElementById("exclamation1").style.visibility="visible";
                 document.getElementById("exclamation2").style.visibility="visible";
                 document.getElementById("shocked1").style.visibility="visible";
@@ -33,11 +35,23 @@ function move_forward() {
                 document.getElementById("king_shout").style.visibility="hidden";
                 document.getElementById("gates").style.visibility="hidden";
             },6800);
+            setTimeout(function(){
+                document.getElementById("exclamation1").style.visibility="hidden";
+                document.getElementById("exclamation2").style.visibility="hidden";
+                document.getElementById("shocked1").style.visibility="hidden";
+                document.getElementById("shocked2").style.visibility="hidden";
 
+                document.getElementById("guard1").style.visibility="visible";
+                document.getElementById("guard2").style.visibility="visible";
+            },7800);
+            setTimeout(function(){
+                document.getElementById("guards_speak").style.visibility="visible";
+                document.getElementById("yes_sir").style.visibility="visible";
+            },8200);
             
         }
         else {
-            pos+=5;
+            pos+=10;
             elem.style.left = pos + "px";
         }
     }

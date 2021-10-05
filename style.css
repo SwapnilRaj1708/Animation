@@ -120,3 +120,40 @@ button{
     margin-top: 590px;
     visibility: hidden;
 }
+#guard1{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 580px;
+    visibility: hidden;
+}
+#guard2{
+    position: absolute;
+    margin-left: 1080px;
+    margin-top: 650px;
+    visibility: hidden;
+}
+#guard_flipped1{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 580px;
+    visibility: hidden;
+}
+#guard_flipped2{
+    position: absolute;
+    margin-left: 1080px;
+    margin-top: 650px;
+    visibility: hidden;
+}
+#guards_speak{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 430px;
+    visibility: hidden;
+}
+#yes_sir{
+    position: absolute;
+    width: 8rem;
+    margin-left: 1020px;
+    margin-top: 475px;
+    visibility: hidden;
+}
