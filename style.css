@@ -50,3 +50,38 @@
     margin-left: 910px;
     margin-top: 650px;
 }
+#king_speak2{
+    position: absolute;
+    width: 20%;
+    margin-left: 660px;
+    margin-top: 210px;
+    visibility: hidden;
+}
+#king_shout{
+    position: absolute;
+    width: 15%;
+    margin-left: 720px;
+    margin-top: 260px;
+    visibility: hidden;
+}
+#gates{
+    position: absolute;
+    width: 13%;
+    margin-left: 750px;
+    margin-top: 350px;
+    visibility: hidden;
+}
+#exclamation1{
+    position: absolute;
+    width: 45px;
+    margin-left: 1085px;
+    margin-top: 560px;
+    visibility: hidden;
+}
+#exclamation2{
+    position: absolute;
+    width: 45px;
+    margin-left: 1175px;
+    margin-top: 640px;
+    visibility: hidden;
+}
