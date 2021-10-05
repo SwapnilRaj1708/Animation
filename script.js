@@ -5,13 +5,16 @@ function move_forward() {
     clearInterval(id);
     id = setInterval(frame, .1);
     function frame() {
-        if (pos == 700) {
+        if (pos == 700 || pos > 700) {
             clearInterval(id);
-            document.getElementById("king_speak1").style.visibility="visible";
+            setTimeout(function(){
+                document.getElementById("king_speak1").style.visibility="visible";
             document.getElementById("openG").style.visibility="visible";
+            },800);
+            
         }
         else {
-            pos+=2;
+            pos+=3;
             elem.style.left = pos + "px";
         }
     }
