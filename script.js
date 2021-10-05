@@ -1,25 +1,21 @@
-// // document.getElementById("king").margin
-// var left = 0;
-// var change = document.getElementById("king").style.marginLeft + 'px';
-function move_forward(){
+function move_forward() {
     let id = null;
-    const elem = document.getElementById("king");   
+    const elem = document.getElementById("king");
     let pos = 0;
     clearInterval(id);
-    id = setInterval(frame, 5);
+    id = setInterval(frame, .1);
     function frame() {
-        if (pos == 350) {
-            clearterval(id);
+        if (pos == 700) {
+            clearInterval(id);
+            document.getElementById("king_speak1").style.visibility="visible";
+            document.getElementById("openG").style.visibility="visible";
         }
         else {
-            pos++; 
-            // elem.style.top = pos + "px"; 
-            elem.style.left = pos + "px"; 
+            pos+=2;
+            elem.style.left = pos + "px";
         }
     }
-    // left = left + 20;
-    // while(change < 200)
-    // {
-    //     change++;
+    // if(pos == 700){
+    //     document.getElementById("king_speak1").style.visibility="visible";
     // }
 }
