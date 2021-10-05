@@ -1,0 +1,29 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+    body{
+    background-color: rgb(0, 162, 255);
+    margin: 0;
+    overflow-x: hidden;
+}
+.road{
+    position: absolute;
+    margin-top: 500px;
+}
+.road2{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 895px;
+}
+.road3{
+    position: absolute;
+    margin-top: 500px;
+    margin-left: 1790px;
+    /* overflow-x: hidden; */
+}
+#king{
+    position: absolute;
+    margin-top: 320px;
+    margin-left: 0;
+}
