@@ -2,10 +2,15 @@
     margin: 0px;
     padding: 0px;
 }
-    body{
+body{
     background-color: rgb(0, 162, 255);
     margin: 0;
     overflow-x: hidden;
+}
+button{
+    width: 200px;
+    height: 40px;
+    font-size: 20px;
 }
 .road{
     position: absolute;
@@ -83,5 +88,35 @@
     width: 45px;
     margin-left: 1175px;
     margin-top: 640px;
+    visibility: hidden;
+}
+#shocked1{
+    position: absolute;
+    margin-left: 910px;
+    margin-top: 650px;
+    visibility: hidden;
+}
+#shocked2{
+    position: absolute;
+    margin-left: 1000px;
+    margin-top: 730px;
+    visibility: hidden;
+}
+#gate_closed{
+    position: absolute;
+    margin-left: 1200px;
+    margin-top: 550px;
+    visibility: visible;
+}
+#gate_open1{
+    position: absolute;
+    margin-left: 1207px;
+    margin-top: 500px;
+    visibility: hidden;
+}
+#gate_open2{
+    position: absolute;
+    margin-left: 1295px;
+    margin-top: 590px;
     visibility: hidden;
 }
