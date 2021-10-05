@@ -36,6 +36,7 @@ button{
     /* overflow-x: hidden; */
 }
 #king{
+    z-index: 1;
     position: absolute;
     margin-top: 520px;
     margin-left: 0;
@@ -117,24 +118,28 @@ button{
     visibility: visible;
 }
 #gate_open1{
+    z-index: 0;
     position: absolute;
     margin-left: 1207px;
     margin-top: 500px;
     visibility: hidden;
 }
 #gate_open2{
+    z-index: 2;
     position: absolute;
     margin-left: 1295px;
     margin-top: 590px;
     visibility: hidden;
 }
 #guard1{
+    z-index: 0;
     position: absolute;
     margin-left: 1000px;
     margin-top: 580px;
     visibility: hidden;
 }
 #guard2{
+    z-index: 2;
     position: absolute;
     margin-left: 1080px;
     margin-top: 650px;

@@ -1,11 +1,44 @@
+function move_forward_again(n) {
+    let id = null;
+    const elem = document.getElementById("king");
+    let pos = n;
+    clearInterval(id);
+    id = setInterval(frame, 5);
+    function frame() {
+        if (pos > 1600) {
+            clearInterval(id);
+        }
+        if (pos > 1300 && pos < 1320) {
+            setTimeout(function(){
+                document.getElementById("guard1").style.visibility="hidden";
+                document.getElementById("guard2").style.visibility="hidden";
+                document.getElementById("guard_flipped1").style.visibility="visible";
+                document.getElementById("guard_flipped2").style.visibility="visible";
+            },800);
+            setTimeout(function(){
+                document.getElementById("gate_open1").style.visibility="hidden";
+                document.getElementById("gate_open2").style.visibility="hidden";
+                document.getElementById("gate_closed").style.visibility="visible";
+                
+            },1200)
+            pos+=4;
+            elem.style.left = pos + "px";
+        }
+        else {
+            pos+=4;
+            elem.style.left = pos + "px";
+        }
+    }
+}
+
 function move_forward() {
     let id = null;
     const elem = document.getElementById("king");
     let pos = 0;
     clearInterval(id);
-    id = setInterval(frame, .1);
+    id = setInterval(frame, 5);
     function frame() {
-        if (pos == 700 || pos > 700) {
+        if (pos > 700) {
             clearInterval(id);
             setTimeout(function(){
                 document.getElementById("king_speak1").style.visibility="visible";
@@ -66,12 +99,14 @@ function move_forward() {
                 document.getElementById("guard_flipped2").style.visibility="hidden";
                 document.getElementById("guard1").style.visibility="visible";
                 document.getElementById("guard2").style.visibility="visible";
-
             },10000);
+            setTimeout(function(){
+                move_forward_again(pos);
+            },10700);
             
         }
         else {
-            pos+=10;
+            pos+=4;
             elem.style.left = pos + "px";
         }
     }
